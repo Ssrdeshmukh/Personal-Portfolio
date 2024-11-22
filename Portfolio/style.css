@@ -46,6 +46,10 @@ body.dark-mode {
     color: #007bff; /* Highlighted link color */
 }
 
+.social-icons img {
+    width: 30px;
+}
+
 .nav-actions .btn {
     text-decoration: none;
     padding: 0.5rem 1rem;
