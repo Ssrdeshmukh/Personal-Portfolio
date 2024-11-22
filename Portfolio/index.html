@@ -4,182 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Shubhankar Deshmukh | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="nav">
-        <div class="nav1">
-            <ul>
-                <li class="nav2"><a href="">Home</a></li>
-                <li class="nav2"><a href="">About Me</a></li>
-                <li class="nav2"><a href="">My Skills</a></li>
-                <li class="nav2"><a href="">My Projects</a></li>
-                <li class="nav2"><a href="">Contact Me</a></li>
+<body class="dark-mode">
+    <!-- Navigation Bar -->
+    <header class="nav">
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-container">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#new-projects">My Projects</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="Resume.pdf" download class="btn">Download CV</a>
+                <a href="#contact-section" class="btn btn-primary">Hire Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home" class="main">
+        <div class="main-content container">
+            <div class="image">
+                <img src="images/p1.jpg" alt="Shubhankar Deshmukh" class="profile-img">
+            </div>
+            <div class="intro">
+                <h1>
+                    <span class="title">Web Application Developer</span><br>
+                    <span class="name">Shubhankar Deshmukh</span>
+                </h1>
+                <p class="role">| <b>Front-End Web Developer</b> |</p>
+                <p class="bio">I'm a passionate Front-End Web Developer working remotely from India. I create modern,
+                    user-friendly web applications.</p>
+            </div>
         </div>
-        <div class="nav4">
-            <h1><a href="">Download CV</a></h1>
+    </section>
+
+    <div id="about-container">
+        <h2 class="about-heading">About Me</h2>
+        <div class="about-content">
+            <!-- Left: Text Section -->
+            <div class="about-left">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated and <span>passionate individual</span> with strong <span>communication</span>, 
+                        <span>time management</span>, and <span>problem-solving skills</span>. 
+                        I believe in continuous learning and adaptability, always eager to explore new technologies and innovative solutions. 
+                        This curiosity drives me to embrace challenges and deliver results with creativity and determination.
+                    </p>
+                    <p>
+                        My approach is rooted in <span>teamwork</span> and collaboration, knowing that great achievements come 
+                        from collective effort. Whether working on projects or tackling new opportunities, I strive to 
+                        bring a <span>positive attitude</span> and an unwavering commitment to excellence.
+                    </p>
+                </div>
+            </div>
+            <!-- Right: Images Section -->
+            <div class="about-right">
+                <img src="images/a1.jpg" alt="Image 1" class="about-img small-img">
+                <img src="images/a2.jpg" alt="Image 2" class="about-img large-img">
+            </div>
         </div>
-        <div class="nav3">
-            <h1><a href="">Hire Me</a></h1>
-        </div>
-        <div class="nav5"></div>
-    </div>
-    <div class="main">
-        <div class="m">
-            <img src="images/p1.jpg" alt="">
-        </div>
-        <div class="m1">
-            <span id="m11"> &nbsp; Web Application</span>
-            <span id="m12">Developer</span>
-        </div>
-        <div class="m2">
-            <span>Shubhankar <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deshmukh</span>
-        </div>
-        <div class="m3">
-            <span>| &nbsp;<b> FRONT-END WEB DEVELOPER</b> . &nbsp;|</span>
-        </div>
-        <div class="m4">
-            <span>-I'm a FRONT-END WEB DEVELOPER. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And
-                work
-                remotely from India.</span>
+        <!-- Contact Button -->
+        <div class="contact-btn-container">
+            <button class="contact-btn">Contact Me</button>
         </div>
     </div>
 
-    <div class="about">
-        <div class="a1">
-            <img src="images/a1.jpg" alt="" id="a11">
+    <div id="skills">
+        <!-- Heading Section -->
+        <div class="skills-heading">
+            <h1>My Skills</h1>
         </div>
-        <div class="a12"><img src="images/a2.jpg" alt="" id="a12">
-        </div>
-        <div class="a2">
-            <span>About Me &nbsp; </span>
-        </div>
-        <div class="a3">
-            <span id="a31">I'm a strong workoholic person and I'm pasionately <br> eager to do any kind of work, as
-                stated by the higher authorities. </span>
-            <span id="a32">I do have good communication <br> and time management skills. And also <br> &nbsp;&nbsp; I'm
-                blessed with good problem solving skills. </span>
-            <br><span id="a33">Rather I'm always eager to learn new skills and also I'm always eager to know more about
-                new technologies in market, simultaneously.</span>
-        </div>
-        <div class="a4">
-            <button>Contact Me</button>
-        </div>
-    </div>
-
-    <div class="skills">
-        <div class="s1">
-            <span>My Skills</span>
-        </div>
-        <div class="s2">
-            <div class="s21">
+    
+        <!-- Skills and Image Container -->
+        <div class="skills-container">
+            <!-- Skills List -->
+            <div class="skills-list">
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                </ul>
-                <ul>
-                    <li>PYTHON</li>
-                    <li>JAVA</li>
-                    <li id="no">&nbsp;</li>
+                    <li><strong>Programming Languages:</strong> Java, JavaScript, Python (Basic)</li>
+                    <li><strong>Web Development:</strong> HTML, CSS, Bootstrap, Node, Express</li>
+                    <li><strong>DSA</strong> (Java)</li>
+                    <li><strong>Database Management:</strong> MySQL, MongoDB</li>
                 </ul>
             </div>
+    
+            <!-- Skills Image -->
+            <div class="skills-image">
+                <img src="images/s1.jpg" alt="Skills Illustration">
+            </div>
         </div>
-        <div class="s3">
-            <img src="images/s1.jpg" alt="">
-        </div>
-        <div class="s4"></div>
+    
+        <!-- Decorative Bar -->
+        <div class="skills-divider"></div>
     </div>
-
-    <div class="p">
-        <div class="p1">
-            &nbsp; My Projects &nbsp;
-        </div>
-        <div class="p2">
-            <div class="p21">
-                <img src="images/i1.png" alt="">
-            </div>
-            <div class="p22">
-                <img src="images/i2.png" alt="">
-            </div>
-            <p class="p211">As shown, it is a front-end web application describing a company named as Vaishali
-                Icecreams. </P>
-            <P class="p212">In the home page, the pictures of those Icecream's flavours appears one by one at some
-                specific time
-                interval, i.e., 0.5 seconds</p>
-            <p class="p213">The background (picture with black background having less opacity) in this project is fixed.
-                So, after
-                scrolling down the background remains stable and next page appears as shown.</p>
-        </div>
-        <div class="p3">
-            <div class="p34">
-                <img src="images/g2.png" alt="">
-            </div>
-            <div class="p31">
-                <img src="images/g3.png" alt="">
-            </div>
-            <div class="p32">
-                <img src="images/g1.png" alt="">
-            </div>
-            <p class="p311">
-                My another project is a website, created using HTML, CSS, Javascript.
-            </p>
-            <p class="p312">
-                This website gives information about the Gym and motivation for fitness.
-            </p>
-            <p class="p313">
-                It also includes a feedback form, Apply now page and BMI calculator, made using Javascript.
-            </p>
-        </div>
-        <div class="p4">
-            <div class="p41">
-                <img src="images/c2.png" alt="">
-            </div>
-            <div class="p42">
-                <img src="images/c1.png" alt="">
-            </div>
-            <div class="p411">
-                <p>Similarly, I have done many such projects using HTML, CSS and Javascript.</p>
+    
+    <div id="new-projects">
+        <h2>My Projects</h2>
+        
+        <div class="project-card">
+            <img src="images/clinic.png" alt="Shriyash Clinic">
+            <div class="project-info">
+                <h3>Shriyash Clinic</h3>
+                <p>Designed and developed a comprehensive management system for Shriyash Clinic to handle appointments and enhance its online presence.</p>
             </div>
         </div>
-        <div class="p5">
-            <div class="p51">
-                <img src="images/sw.png" alt="">
-            </div>
-            <div class="p52">
-                <img src="images/sc.png" alt="">
-            </div>
-            <div class="p53">
-                <img src="images/tc.png" alt="">
+    
+        <div class="project-card">
+            <img src="images/food-tourism.png" alt="Food Tourism Platform">
+            <div class="project-info">
+                <h3>Food Tourism Platform</h3>
+                <p>Created a dynamic web application to promote food tourism by showcasing popular food destinations, restaurants, and local delicacies.</p>
             </div>
         </div>
-        <div class="p6"></div>
-    </div>
-    <div class="c">
-        <div id="c11">
-            Contact Me &nbsp
+    
+        <div class="project-card">
+            <img src="images/sudoku.png" alt="Sudoku Solver">
+            <div class="project-info">
+                <h3>Sudoku Solver</h3>
+                <p>Built a Java Sudoku solver using a backtracking algorithm to solve puzzles automatically.</p>
+            </div>
         </div>
-        <div class="c2">
-            <form action="nothing.php">
-                <div id="c21">
-                    <span>Name : </span><input type="text">
-                </div>
-                <div id="c22">
-                    <span>Email : </span> <input type="text">
-                </div>
-                <div id="c23">
-                    <span>Message : </span> <input type="text">
-                </div>
-                <div class="btn"><button id="btn1">Reset</button><button id="btn2">Submit</button></div>
-            </form>
+    
+        <div class="project-card">
+            <img src="images/icecream.png" alt="Vaishali Icecreams">
+            <div class="project-info">
+                <h3>Vaishali Icecreams</h3>
+                <p>This front-end web application is designed for Vaishali Icecreams. Images of various ice cream flavors are displayed sequentially at 0.5-second intervals, with a fixed dark overlay background for smooth scrolling transitions.</p>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <img src="images/other.jpg" alt="Other Projects">
+            <div class="project-info">
+                <h3>Other Projects</h3>
+                <p>Explored a variety of projects utilizing technologies like HTML, CSS, JavaScript, and Java to enhance web design and functionality skills.</p>
+            </div>
         </div>
     </div>
-
-
-
+    
+    <div id="contact-section">
+        <div class="contact-heading">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me for collaborations, project inquiries, or just a friendly hello!</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> ssrdeshmukh@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7218860924</p>
+                <p><strong>Location:</strong> Pune, India</p>
+                <p>Let’s create something amazing together!</p>
+            </div>
+            <div class="contact-form-container">
+                <form action="nothing.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
