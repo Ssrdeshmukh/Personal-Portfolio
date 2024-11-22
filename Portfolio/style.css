@@ -37,13 +37,13 @@ body.dark-mode {
 
 .nav-links li a {
     text-decoration: none;
-    color: #00e5ff;
+    color: #e0e0e0;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #007bff; /* Highlighted link color */
+    color: #00b4db; /* Highlighted link color */
 }
 
 .social-icons img {
@@ -53,25 +53,25 @@ body.dark-mode {
 .nav-actions .btn {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid #007bff;
+    border: 1px solid #00b4db;
     border-radius: 4px;
-    color: #00e5ff;
+    color: #00b4db;
     font-weight: bold;
     transition: all 0.3s;
 }
 
 .nav-actions .btn:hover {
-    background: #00e5ff;
-    color: #fff;
+    background: #00b4db;
+    color: #b01010;
 }
 
 .nav-actions .btn-primary {
-    background: #007bff;
+    background: #00b4db;
     color: #fff;
 }
 
 .nav-actions .btn-primary:hover {
-    background: #0056b3;
+    background: #35daff;
 }
 
 /* Main Section */
@@ -103,7 +103,7 @@ body.dark-mode {
     width: 100%; /* Set width to 100% of the container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure image covers the area */
-    border: 5px solid #007bff;
+    border: 5px solid #00b4db;
 }
 
 .intro {
@@ -119,7 +119,7 @@ body.dark-mode {
 
 .intro .title {
     font-size: 2rem;
-    color: #007bff;
+    color: #00b4db;
     font-weight: bold;
 }
 
@@ -219,7 +219,7 @@ body.dark-mode {
 
 /* Highlight certain keywords */
 .about-text span {
-    color: #007bff; /* Highlight color for keywords */
+    color: #00b4db; /* Highlight color for keywords */
     font-weight: bold;
 }
 
@@ -441,10 +441,10 @@ body.dark-mode {
 }
 
 #new-projects h2 {
-/*     font-size: 2.5rem; */
+    font-size: 2.5rem;
     text-decoration: underline;
     margin-bottom: 30px;
-/*     color: #00e5ff; */
+    color: #00e5ff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
