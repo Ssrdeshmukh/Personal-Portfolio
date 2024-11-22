@@ -345,7 +345,7 @@ body.dark-mode {
 
 /* Skills Heading */
 .skills-heading h1 {
-    /* font-size: 3rem; */
+    font-size: 40px;
     /* color: #00bcd4; */
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -441,10 +441,10 @@ body.dark-mode {
 }
 
 #new-projects h2 {
-    /* font-size: 2.5rem; */
-    text-decoration: underline;
     margin-bottom: 30px;
     /* color: #00e5ff; */
+    font-size: 40px;
+    font-weight: bolder;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
