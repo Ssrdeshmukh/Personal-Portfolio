@@ -1,594 +1,190 @@
-/* Global Dark Mode Styles */
-body.dark-mode {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Navigation Bar */
-.nav {
-    background: #1e1e1e; /* Slightly lighter for navbar */
-    border-bottom: 1px solid #333;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhankar Deshmukh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+<body class="dark-mode">
+    <!-- Navigation Bar -->
+    <header class="nav">
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-container">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#new-projects">My Projects</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
+                <li class="social-icons">
+                    <a href="https://www.linkedin.com/in/shubhankar-deshmukh-94020324b" target="_blank">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="https://github.com/Ssrdeshmukh" target="_blank">
+                        <img src="images/github-icon.png" alt="GitHub" class="icon">
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Resume.pdf" download class="btn">Download CV</a>
+                <a href="#contact-section" class="btn btn-primary">Hire Me</a>
+            </div>
+        </nav>
+    </header>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-}
+    <!-- Main Section -->
+    <section id="home" class="main">
+        <div class="main-content container">
+            <div class="image">
+                <img src="images/p1.jpg" alt="Shubhankar Deshmukh" class="profile-img">
+            </div>
+            <div class="intro">
+                <h1>
+                    <span class="title">Web Developer</span><br>
+                    <span class="name">Shubhankar Deshmukh</span>
+                </h1>
+                <p class="role">| <b>Front-End Web Developer</b> |</p>
+                <p class="bio">I'm a passionate Front-End Web Developer working remotely from India. I create modern,
+                    user-friendly web applications.</p>
+            </div>
+        </div>
+    </section>
 
-.nav-links li a {
-    text-decoration: none;
-    color: #e0e0e0;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    <div id="about-container">
+        <h2 class="about-heading">ABOUT ME</h2>
+        <div class="about-content">
+            <!-- Left: Text Section -->
+            <div class="about-left">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated and <span>passionate individual</span> with strong <span>communication</span>, 
+                        <span>time management</span>, and <span>problem-solving skills</span>. 
+                        I believe in continuous learning and adaptability, always eager to explore new technologies and innovative solutions. 
+                        This curiosity drives me to embrace challenges and deliver results with creativity and determination.
+                    </p>
+                    <p>
+                        My approach is rooted in <span>teamwork</span> and collaboration, knowing that great achievements come 
+                        from collective effort. Whether working on projects or tackling new opportunities, I strive to 
+                        bring a <span>positive attitude</span> and an unwavering commitment to excellence.
+                    </p>
+                </div>
+            </div>
+            <!-- Right: Images Section -->
+            <div class="about-right">
+                <img src="images/a1.jpg" alt="Image 1" class="about-img small-img">
+                <img src="images/a2.jpg" alt="Image 2" class="about-img large-img">
+            </div>
+        </div>
+        <!-- Contact Button -->
+        <div class="contact-btn-container">
+            <button class="contact-btn">Contact Me</button>
+        </div>
+    </div>
 
-.nav-links li a:hover {
-    color: #00b4db; /* Highlighted link color */
-}
-
-.social-icons img {
-    width: 30px;
-}
-
-.nav-actions .btn {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid #00b4db;
-    border-radius: 4px;
-    color: #00b4db;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.nav-actions .btn:hover {
-    background: #00b4db;
-    color: #b01010;
-}
-
-.nav-actions .btn-primary {
-    background: #00b4db;
-    color: #fff;
-}
-
-.nav-actions .btn-primary:hover {
-    background: #35daff;
-}
-
-/* Main Section */
-.main {
-    background: #121212; /* Dark background */
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.main-content {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute content */
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2rem; /* Spacing between image and text */
-}
-
-.image {
-    flex: 1; /* Make the image take up half of the space */
-    max-width: 50%; /* Limit the image width to 50% of the page */
-    text-align: center;
-}
-
-.profile-img {
-    border-radius: 50%;
-    width: 100%; /* Set width to 100% of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure image covers the area */
-    border: 5px solid #00b4db;
-}
-
-.intro {
-    flex: 1; /* Allow text to take up remaining space */
-    text-align: left;
-    padding-left: 2rem; /* Spacing from the image */
-}
-
-.intro h1 {
-    font-size: 3.5rem;
-    margin: 0;
-}
-
-.intro .title {
-    font-size: 2rem;
-    color: #00b4db;
-    font-weight: bold;
-}
-
-.intro .name {
-    font-size: 49px;
-    font-weight: bold;
-    color: #e0e0e0;
-    margin-top: 1rem;
-}
-
-.intro .role {
-    margin: 1.5rem 0;
-    font-size: 1.5rem;
-    color: #bbb;
-}
-
-.intro .bio {
-    font-size: 1.2rem;
-    color: #aaa;
-    margin-top: 0.5rem;
-}
-
-/* Responsive Design for Larger Image */
-@media (min-width: 768px) {
-    .main-content {
-        flex-direction: row;
-        gap: 4rem; /* Increased gap for better spacing on larger screens */
-    }
+    <div id="skills">
+        <!-- Heading Section -->
+        <div class="skills-heading">
+            <h1>MY SKILLS</h1>
+        </div>
     
-    .intro {
-        text-align: left; /* Align text to the left */
-    }
-}
+        <!-- Skills and Image Container -->
+        <div class="skills-container">
+            <!-- Skills List -->
+            <div class="skills-list">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Java, JavaScript, Python (Basic)</li>
+                    <li><strong>Web Development:</strong> HTML, CSS, Bootstrap, Node, Express</li>
+                    <li><strong>DSA</strong> (Java)</li>
+                    <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+                </ul>
+            </div>
+    
+            <!-- Skills Image -->
+            <div class="skills-image">
+                <img src="images/s1.jpg" alt="Skills Illustration">
+            </div>
+        </div>
+    
+        <!-- Decorative Bar -->
+        <div class="skills-divider"></div>
+    </div>
+    
+    <div id="new-projects">
+        <h2>MY PROJECTS</h2>
+        
+        <div class="project-card">
+            <img src="images/clinic.png" alt="Shriyash Clinic">
+            <div class="project-info">
+                <h3>Shriyash Clinic</h3><span>GitHub - https://github.com/Ssrdeshmukh/Shriyash-Clinic</span>
+                <p>Designed and developed a comprehensive management system for Shriyash Clinic to handle appointments and enhance its online presence.</p>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <img src="images/food-tourism.png" alt="Food Tourism Platform">
+            <div class="project-info">
+                <h3>Food Tourism Platform</h3><span>GitHub - https://github.com/Ssrdeshmukh/FoodTourism</span>
+                <p>Created a dynamic web application to promote food tourism by showcasing popular food destinations, restaurants, and local delicacies.</p>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <img src="images/sudoku.png" alt="Sudoku Solver">
+            <div class="project-info">
+                <h3>Sudoku Solver</h3><span>GitHub - https://github.com/Ssrdeshmukh/SodokuSolver</span>
+                <p>Built a Java Sudoku solver using a backtracking algorithm to solve puzzles automatically.</p>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <img src="images/icecream.png" alt="Vaishali Icecreams">
+            <div class="project-info">
+                <h3>Vaishali Icecreams</h3><span>GitHub - https://github.com/Ssrdeshmukh/SodokuSolver</span>
+                <p>This front-end web application is designed for Vaishali Icecreams. Images of various ice cream flavors are displayed sequentially at 0.5-second intervals, with a fixed dark overlay background for smooth scrolling transitions.</p>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <img src="images/other.jpg" alt="Other Projects">
+            <div class="project-info">
+                <h3>Other Projects</h3>
+                <p>Explored a variety of projects utilizing technologies like HTML, CSS, JavaScript, and Java to enhance web design and functionality skills.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact-section">
+        <div class="contact-heading">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me for collaborations, project inquiries, or just a friendly hello!</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> ssrdeshmukh@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7218860924</p>
+                <p><strong>Location:</strong> Pune, India</p>
+                <p>Let’s create something amazing together!</p>
+            </div>
+            <div class="contact-form-container">
+                <form action="nothing.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
 
-@media (max-width: 768px) {
-    /* On smaller screens, stack the image and text vertically */
-    .main-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image {
-        max-width: 100%; /* Allow image to take full width on small screens */
-        margin-bottom: 1rem;
-    }
-
-    .intro {
-        padding-left: 0;
-    }
-}
-
-/* About Section Container */
-#about-container {
-    max-width: 90%; /* Adjust container width for responsiveness */
-    margin: 2rem auto; /* Center the container */
-    background-color: #1e1e1e; /* Dark background for the container */
-    border: 2px solid #333; /* Border to highlight the container */
-    border-radius: 10px; /* Rounded corners */
-    padding: 2rem; /* Space inside the container */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-}
-
-/* About Section Heading */
-.about-heading {
-    text-align: center;
-    font-size: 40px;
-    /* color: #007bff; */
-    margin-bottom: 1.5rem; /* Spacing below heading */
-}
-
-/* About Content (Text and Images Container) */
-.about-content {
-    display: flex;
-    justify-content: flex-start; /* Align everything to the left */
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px; /* Gap between text and images */
-}
-
-/* Left Side: Text */
-/* Left Side: Text */
-.about-left {
-    flex: 1;
-    max-width: 50%;
-    text-align: left;
-    padding: 20px; /* Increased padding for spacing */
-    color: #e0e0e0;
-}
-
-.about-text p {
-    font-size: 1.2rem; /* Slightly larger font for readability */
-    line-height: 1.8; /* Increased line height for better spacing */
-    margin-bottom: 1.5rem; /* Spacing between paragraphs */
-    text-indent: 2rem; /* Indent for paragraphs */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
-}
-
-/* Highlight certain keywords */
-.about-text span {
-    color: #00b4db; /* Highlight color for keywords */
-    font-weight: bold;
-}
-
-.about-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* Right Side: Images */
-.about-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start; /* Align images closer to text */
-    align-items: flex-start;
-    gap: 10px; /* Reduced gap between the two images */
-    position: relative;
-}
-
-/* Common Image Styles */
-.about-img {
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transition: transform 0.3s ease;
-}
-
-/* Smaller Image Styling */
-.small-img {
-    width: 40%;
-    height: auto;
-    margin-left: 40px;
-    position: relative;
-    top: 10px; /* Slight adjustment */
-    left: -15px; /* Move closer to the text */
-}
-
-/* Larger Image Styling */
-.large-img {
-    width: 50%;
-    height: auto;
-    position: relative;
-    top: -30px; /* Adjusted for staggered look */
-    left: -25px; /* Move closer to the text */
-}
-
-/* Contact Button */
-.contact-btn-container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.contact-btn {
-    padding: 12px 20px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-left {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .about-right {
-        max-width: 100%;
-        justify-content: center;
-    }
-
-    .about-img {
-        width: 70vw;
-        height: auto;
-    }
-
-    .contact-btn {
-        font-size: 1rem;
-        padding: 10px 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-heading {
-        font-size: 2rem;
-    }
-
-    .about-text {
-        font-size: 1rem;
-    }
-
-    .contact-btn {
-        font-size: 0.9rem;
-    }
-}
-
-/* Overall Skills Section */
-#skills {
-    position: relative;
-    margin: 80px auto;
-    padding: 50px 20px;
-    background-color: #1e1e1e; /* Dark Background */
-    color: #e0e0e0;
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    max-width: 1200px; /* Limit width for large screens */
-    text-align: center;
-}
-
-/* Skills Heading */
-.skills-heading h1 {
-    font-size: 40px;
-    /* color: #00bcd4; */
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* Skills and Image Container */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap; /* Wrap on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; /* Add spacing between items */
-}
-
-/* Skills List */
-.skills-list {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
-    font-size: 1.2rem;
-    line-height: 2; /* Increased line spacing for readability */
-}
-
-.skills-list ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 10px; /* Add spacing between list items */
-    color: #00e5ff; /* Accent color for text */
-    font-weight: bold;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Highlight specific categories */
-.skills-list li strong {
-    color: #ffd700; /* Gold color for skill categories */
-    font-weight: bold;
-}
-
-/* Skills Image */
-.skills-image {
-    flex: 1;
-    text-align: center;
-}
-
-.skills-image img {
-    width: 100%;
-    max-width: 400px; /* Limit max size */
-    height: auto;
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.skills-image img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Decorative Divider */
-.skills-divider {
-    width: 100px;
-    height: 5px;
-    background-color: #00e5ff; /* Accent Color */
-    margin: 30px auto 0;
-    border-radius: 2.5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    .skills-list {
-        text-align: center;
-    }
-
-    .skills-image img {
-        max-width: 300px;
-    }
-}
-
-/* Projects Section */
-#new-projects {
-    margin: 50px auto;
-    padding: 20px;
-    width: 90%;
-    color: white;
-    text-align: center;
-}
-
-#new-projects h2 {
-    margin-bottom: 30px;
-    /* color: #00e5ff; */
-    font-size: 40px;
-    font-weight: bolder;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Individual Project Card */
-.project-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    gap: 20px;
-}
-
-/* Project Images */
-.project-card img {
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-/* Project Info Section */
-.project-info {
-    max-width: 600px;
-    text-align: left;
-    color: #cce7f0;
-    font-size: 1.1rem;
-}
-
-.project-info h3 {
-    font-size: 1.8rem;
-    color: #00e5ff;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-/* Contact Section */
-#contact-section {
-    background: linear-gradient(135deg, #00b4db, #0083b0);
-    color: white;
-    padding: 50px 20px;
-    border-radius: 15px;
-    margin: 50px auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.contact-heading h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.contact-heading p {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #f0f8ff;
-}
-
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-info {
-    flex: 1;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    text-align: center;
-}
-
-.contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #e0ffff;
-}
-
-.contact-info p {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #d1eeee;
-}
-
-.contact-form-container {
-    flex: 2;
-    max-width: 600px;
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.form-group {
-    margin-bottom: 20px;
-    margin-right: 30px;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #00b4db;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus, .form-group textarea:focus {
-    border-color: #0083b0;
-    background-color: rgba(0, 180, 219, 0.1);
-}
-
-.btn-submit {
-    background: #00b4db;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.btn-submit:hover {
-    background: #0083b0;
-    transform: scale(1.05);
-}
+</html>
